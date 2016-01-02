@@ -22,7 +22,7 @@ import (
 )
 
 func main() {
-	options := new(Option)
+	options := new(Options)
 	flag.StringVar(&options.Source,
 		"s", "", "sets the source file or directory")
 	flag.StringVar(&options.Destination,

@@ -17,7 +17,7 @@
 // options
 package main
 
-type Option struct {
+type Options struct {
 	Source      string
 	Destination string
 
