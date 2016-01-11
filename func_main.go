@@ -14,19 +14,7 @@
    limitations under the License.
 */
 
-// isfile
+// main
 package main
 
-import (
-	"os"
-)
-
-func IsFile(path string) (isFile bool, fileInfo os.FileInfo, err error) {
-	if fileInfo, err = os.Stat(path); err != nil {
-		return
-	}
-	if fileInfo.IsDir() == false {
-		isFile = true
-	}
-	return
-}
+func main() {}

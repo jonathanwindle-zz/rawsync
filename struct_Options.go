@@ -14,7 +14,31 @@
    limitations under the License.
 */
 
-// rawsync
+// Options
 package main
 
-func main() {}
+type Options struct {
+	Source      string
+	Destination string
+
+	JpegOutput         bool
+	PngOutput          bool
+	WebpOutputLossless bool
+	WebpOutputLossy    bool
+
+	JpegQuality         int
+	WebpQualityLossless int
+	WebpQualityLossy    int
+
+	JpegDestination         string
+	PngDestination          string
+	WebpDestinationLossless string
+	WebpDestinationLossy    string
+
+	CjpegOptions         string
+	CwebpOptionsLossless string
+	CwebpOptionsLossy    string
+
+	Folders bool
+	MaxCpus int
+}
