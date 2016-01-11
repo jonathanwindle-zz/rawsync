@@ -14,7 +14,7 @@
    limitations under the License.
 */
 
-// rawsync
+// main
 package main
 
 func main() {}
