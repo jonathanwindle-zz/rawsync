@@ -35,8 +35,8 @@ func (rf *RawFile) Metadata() (metadata string, err error) {
 		return
 	}
 
-	rawfile.Meta = make(map[string]string)
 	metaStrings := reFindMeta.FindAllStringSubmatch(metadata, -1)
+	rawfile.Meta = make(map[string]string, len(metaStrings))
 	for index := range metaStrings {
 		key := strings.ToLower(metaStrings[index][1])
 		rawfile.Meta[key] = metaStrings[index][2]
